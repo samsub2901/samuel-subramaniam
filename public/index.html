@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samuel Subramaniam · Engineering and finance</title>
+  <meta name="description" content="Mechanical engineering at Columbia, co-op at GE Vernova. Eight projects: a portfolio terminal I built for my own accounts, shop-floor automation, metrology and operations work.">
+  <link rel="canonical" href="https://samuel-subramaniam.aurora-watch.workers.dev/">
+  <meta name="theme-color" content="#edf1ea" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121714" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Samuel Subramaniam · Engineering and finance">
+  <meta property="og:description" content="Mechanical engineering at Columbia, co-op at GE Vernova. Eight projects, from a CNC print gateway to a portfolio terminal I built for my own accounts.">
+  <meta property="og:url" content="https://samuel-subramaniam.aurora-watch.workers.dev/">
+  <meta property="og:image" content="https://samuel-subramaniam.aurora-watch.workers.dev/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Samuel Subramaniam, drawn as the cover sheet of an engineering drawing set.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="/assets/fonts/barlow-sc-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap">
+      <p class="label">Portfolio · Rev. A · Nov 2026</p>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a class="btn" href="/Samuel_Subramaniam_Resume.pdf" download="Samuel_Subramaniam_Resume.pdf">
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M6 1v7M3 5l3 3 3-3M1.5 11h9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              <span><span class="wide-only">Download </span>résumé (PDF)</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="intro" aria-labelledby="name">
+      <div class="wrap">
+        <div class="intro-name">
+          <p class="label">Sheet 00 · Cover</p>
+          <h1 id="name"><span>Samuel</span> <span>Subramaniam</span></h1>
+        </div>
+        <div>
+          <p class="lede">I study mechanical engineering at Columbia and work as a Gas Power &amp; Supply Chain co-op at GE Vernova in Bangor, Maine. Most of what I build connects old machines to modern systems or replaces slow manual work with something that runs on its own. On my own time, I built the portfolio terminal I use to follow my investments.</p>
+        </div>
+        <dl class="facts">
+          <div>
+            <dt class="label">Now</dt>
+            <dd>Gas Power &amp; Supply Chain Co-op, GE Vernova<small>Bangor, Maine · since June 2026</small></dd>
+          </div>
+          <div>
+            <dt class="label">Before</dt>
+            <dd>IT Intern, GTS Securities<small>New York · June to October 2025</small></dd>
+          </div>
+          <div>
+            <dt class="label">Studying</dt>
+            <dd>BS Mechanical Engineering, minor in Aerospace<small>Columbia Engineering · May 2028</small></dd>
+          </div>
+          <div>
+            <dt class="label">Looking for</dt>
+            <dd>Roles in engineering and in finance</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="work-title">Schedule of work</h2>
+          <p class="label">Index · 8 sheets</p>
+        </div>
+
+        <div class="table-wrap" role="region" aria-labelledby="work-title" tabindex="0">
+          <table class="schedule">
+            <caption class="visually-hidden">Eight projects, with sheet number, where the work was done and the result</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="label">Sheet</th>
+                <th scope="col" class="label">Project</th>
+                <th scope="col" class="label">Where</th>
+                <th scope="col" class="label">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td><a href="#s01">A portfolio terminal I built for my own accounts</a></td>
+                <td>Personal</td>
+                <td>In daily use on my phone</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td><a href="#s02">CNC data off the dot-matrix printer</a></td>
+                <td>GE Vernova</td>
+                <td>Dot-matrix printers retired</td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td><a href="#s03">Correcting CMM probe offsets</a></td>
+                <td>GE Vernova</td>
+                <td>Least-squares fit checked against beam theory</td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td><a href="#s04">MFA device rollout</a></td>
+                <td>GE Vernova</td>
+                <td>200+ devices issued and set up</td>
+              </tr>
+              <tr>
+                <td>05</td>
+                <td><a href="#s05">Sizing a 140-person office move</a></td>
+                <td>GTS Securities</td>
+                <td>$100k+ of equipment ordered from my inventory</td>
+              </tr>
+              <tr>
+                <td>06</td>
+                <td><a href="#s06">Inspection reports that build themselves</a></td>
+                <td>GE Vernova</td>
+                <td>Saves 5–10 hours of labor a week</td>
+              </tr>
+              <tr>
+                <td>07</td>
+                <td><a href="#s07">Aero parts for an electric race car</a></td>
+                <td>Columbia FSAE</td>
+                <td>Designed and validated with CFD and FEA</td>
+              </tr>
+              <tr>
+                <td>08</td>
+                <td><a href="#s08">Home security camera</a></td>
+                <td>Personal</td>
+                <td>Motion alerts and remote view, in use</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Sheet 01 -->
+        <article class="sheet" id="s01" aria-labelledby="s01-title">
+          <header class="sheet-head">
+            <p class="label no">Sheet 01</p>
+            <p class="label">Personal · Full-stack · Markets</p>
+          </header>
+          <h3 id="s01-title">A portfolio terminal I built for my own accounts</h3>
+          <div class="sheet-body">
+            <div class="sheet-text">
+              <h4 class="label">Problem</h4>
+              <p>Broker apps show my positions but not the analysis I want. Paid terminals cost far more than a student can spend.</p>
+
+              <h4 class="label">What I built</h4>
+              <p>Aurora is a private portfolio terminal for my Vanguard and Robinhood accounts, plus bank and card spending. It installs on my iPhone as a web app, signs me in with Face ID and sends push alerts. Beyond holdings, it has news, markets and spending screens, and a page for every ticker with candlestick charts and fundamentals. An AI assistant answers questions about the screen I'm on and writes a morning brief and a weekly review. Before any of that text is shown, a number guard checks every figure in it against the source data.</p>
+              <p>It runs on Cloudflare Workers with a D1 (SQLite) database, a five-minute scheduler and plain JavaScript, with no framework. Holdings come in read-only through Plaid. Prices, filings and macro data come from Finnhub, Tiingo, Alpha Vantage, FMP, FRED and the SEC, and a call budget keeps each source inside its free limit. Private data is encrypted at rest, and nothing in the app can move money. An optional helper on my laptop runs a local model for background reading and makes nightly encrypted backups. I built it with Claude Code; the repository is named Finance Watch.</p>
+
+              <h4 class="label">Result</h4>
+              <p>In daily use on my phone, with 123 automated tests. I also ran a security review of my own app, fixed each finding in its own commit with a test that failed before the fix, and added automated checks that run before every commit.</p>
+
+              <div class="plates">
+                <figure>
+                  <img src="/assets/aurora-home.jpg" width="585" height="1266" loading="lazy" decoding="async" alt="Aurora's home screen: a fictional portfolio's total value, today's change, a three-month chart and summary tiles.">
+                  <figcaption class="label">Fig. 01-A · Home</figcaption>
+                </figure>
+                <figure>
+                  <img src="/assets/aurora-ticker.jpg" width="585" height="1266" loading="lazy" decoding="async" alt="Aurora's ticker page for NVIDIA: a one-year candlestick chart with a 50-day moving average and volume bars.">
+                  <figcaption class="label">Fig. 01-B · Ticker page</figcaption>
+                </figure>
+                <p class="plates-note">From the example build: a fictional portfolio over a real, frozen market-data snapshot.</p>
+              </div>
+            </div>
+
+            <aside class="sheet-side" aria-label="Sheet 01 figures and title block">
+              <dl class="figures">
+                <div><dt>Market-data sources, all on free tiers</dt><dd>6</dd></div>
+                <div><dt>Automated tests</dt><dd>123</dd></div>
+                <div><dt>A month to run</dt><dd>$0</dd></div>
+              </dl>
+              <div class="finance">
+                <h4 class="label">Read as finance</h4>
+                <p>It turns raw holdings, filings and macro data into the views an analyst checks each morning, and every AI-written number is reconciled to its source.</p>
+              </div>
+              <dl class="title-block">
+                <div><dt class="label">Title</dt><dd>Aurora portfolio terminal</dd></div>
+                <div><dt class="label">Stack</dt><dd>Cloudflare Workers, D1, JavaScript</dd></div>
+                <div><dt class="label">Data</dt><dd>Plaid, Finnhub, Tiingo, FRED, SEC</dd></div>
+                <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>01 of 08</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </article>
+
+        <!-- Sheet 02 -->
+        <article class="sheet" id="s02" aria-labelledby="s02-title">
+          <header class="sheet-head">
+            <p class="label no">Sheet 02</p>
+            <p class="label">GE Vernova · Shop-floor connectivity · Embedded Linux</p>
+          </header>
+          <h3 id="s02-title">CNC data off the dot-matrix printer</h3>
+          <div class="sheet-body">
+            <div class="sheet-text">
+              <h4 class="label">Problem</h4>
+              <p>A Daewoo Mynx 500 machining center with a <span class="nowrap">Fanuc 21-M</span> controller could only send its output over a serial line to a dot-matrix printer. Those printers are old and increasingly expensive to keep running, and they leave the data on paper only.</p>
+
+              <h4 class="label">What I built</h4>
+              <p>A Raspberry Pi running Linux captures the controller's serial output (RS-232, 7E2, through a TRENDnet <span class="nowrap">TU-S9</span> USB-serial adapter) and puts it on the network. A Python print helper on the shop-floor Windows PC, packaged as an .exe with PyInstaller, sends it to a networked Brother <span class="nowrap">HL-L2405W</span> laser printer over <span class="nowrap">Wi-Fi</span>.</p>
+              <p>Around it, a scheduled Robocopy job with filtering and logging files CNC output on a network share. I also changed the plant's legacy VB6 DNC software so G-code files open in an editor (portable Notepad++) instead of printing, behind a config flag.</p>
+
+              <h4 class="label">Result</h4>
+              <p>The dot-matrix printers are retired. One problem is still open: making the print helper survive Windows updates without a weekly reinstall.</p>
+            </div>
+
+            <aside class="sheet-side" aria-label="Sheet 02 notes and title block">
+              <div class="finance">
+                <h4 class="label">Read as finance</h4>
+                <p>A build-versus-buy call: a cheap gateway instead of replacing a machine that still cuts metal well.</p>
+              </div>
+              <dl class="title-block">
+                <div><dt class="label">Title</dt><dd>Serial-to-network print gateway</dd></div>
+                <div><dt class="label">Machine</dt><dd>Daewoo Mynx 500, <span class="nowrap">Fanuc 21-M</span></dd></div>
+                <div><dt class="label">Serial</dt><dd>RS-232, 7E2</dd></div>
+                <div><dt class="label">Software</dt><dd>Linux, Python, VB6</dd></div>
+                <div><dt class="label">Status</dt><dd><span class="mark mark--half" aria-hidden="true"></span>Helper in progress</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>02 of 08</dd></div>
+              </dl>
+            </aside>
+          </div>
+
+          <figure class="path" aria-labelledby="s02-fig">
+            <ol>
+              <li data-out="RS-232">
+                <span class="name">CNC controller</span>
+                <span class="spec">Fanuc 21-M, serial out</span>
+              </li>
+              <li data-out="USB">
+                <span class="name">USB-serial adapter</span>
+                <span class="spec">TRENDnet TU-S9</span>
+              </li>
+              <li class="mine" data-out="Network">
+                <span class="name">Pi gateway</span>
+                <span class="spec">Raspberry Pi, Linux</span>
+                <span class="label own">Mine</span>
+              </li>
+              <li class="mine" data-out="Wi-Fi">
+                <span class="name">Print helper</span>
+                <span class="spec">Python app on the shop-floor PC</span>
+                <span class="label own">Mine</span>
+              </li>
+              <li>
+                <span class="name">Laser printer</span>
+                <span class="spec">Brother HL-L2405W</span>
+              </li>
+            </ol>
+            <figcaption id="s02-fig" class="label"><span>Fig. 02-A · Signal path</span><span class="key-mine">My parts</span></figcaption>
+          </figure>
+        </article>
+
+        <!-- Sheet 03 -->
+        <article class="sheet" id="s03" aria-labelledby="s03-title">
+          <header class="sheet-head">
+            <p class="label no">Sheet 03</p>
+            <p class="label">GE Vernova · Metrology · Numerical methods</p>
+          </header>
+          <h3 id="s03-title">Correcting CMM probe offsets</h3>
+          <div class="sheet-body">
+            <div class="sheet-text">
+              <h4 class="label">Problem</h4>
+              <p>A coordinate measuring machine records each touch as a point and a surface direction: XYZ plus the IJK normal. If the probe's offsets are slightly wrong, every measurement inherits the error.</p>
+
+              <h4 class="label">What I did</h4>
+              <p>Working with the plant's metrology lead, I estimated offset corrections from XYZIJK data with a least-squares fit. Then I checked the results against what beam theory predicts for the probe.</p>
+
+              <h4 class="label">Result</h4>
+              <p>A validated method: the fitted corrections agreed with the beam-theory prediction, an independent physical model.</p>
+            </div>
+
+            <aside class="sheet-side" aria-label="Sheet 03 notes and title block">
+              <div class="finance">
+                <h4 class="label">Read as finance</h4>
+                <p>Least squares is the method behind linear regression; here the fit had to agree with an independent physical model before anyone trusted it.</p>
+              </div>
+              <dl class="title-block">
+                <div><dt class="label">Title</dt><dd>Probe offset correction</dd></div>
+                <div><dt class="label">Method</dt><dd>Least squares</dd></div>
+                <div><dt class="label">Check</dt><dd>Beam theory</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>03 of 08</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </article>
+
+        <!-- Sheet 04 -->
+        <article class="sheet" id="s04" aria-labelledby="s04-title">
+          <header class="sheet-head">
+            <p class="label no">Sheet 04</p>
+            <p class="label">GE Vernova · Program management · IT security</p>
+          </header>
+          <h3 id="s04-title">MFA device rollout</h3>
+          <div class="sheet-body">
+            <div class="sheet-text">
+              <h4 class="label">Problem</h4>
+              <p>More than 200 people at the plant needed multi-factor authentication devices. There weren't enough units, eligibility wasn't clear, and many people work on the shop floor across different shifts.</p>
+
+              <h4 class="label">What I did</h4>
+              <p>I ran the rollout over several months. I sourced extra units from other GE teams and wrote a Python scraper that pulled employee data from an internal system to work out who was eligible. An Excel register matched every serial number to its recipient. I held office hours, and I tracked down shop-floor workers on every shift for one-on-one setup walkthroughs.</p>
+
+              <h4 class="label">Result</h4>
+              <p>More than 200 devices issued and set up, each one traceable to a person.</p>
+            </div>
+
+            <aside class="sheet-side" aria-label="Sheet 04 figures and title block">
+              <dl class="figures">
+                <div><dt>Devices issued and set up</dt><dd>200+</dd></div>
+              </dl>
+              <div class="finance">
+                <h4 class="label">Read as finance</h4>
+                <p>Allocating scarce inventory against an eligibility rule, with a register that reconciles every unit.</p>
+              </div>
+              <dl class="title-block">
+                <div><dt class="label">Title</dt><dd>MFA rollout</dd></div>
+                <div><dt class="label">Tools</dt><dd>Python, Excel</dd></div>
+                <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>Complete</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>04 of 08</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </article>
+
+        <!-- Sheet 05 -->
+        <article class="sheet" id="s05" aria-labelledby="s05-title">
+          <header class="sheet-head">
+            <p class="label no">Sheet 05</p>
+            <p class="label">GTS Securities · Budgeting · Trading-floor operations</p>
+          </header>
+          <h3 id="s05-title">Sizing a 140-person office move</h3>
+          <div class="sheet-body">
+            <div class="sheet-text">
+              <h4 class="label">Problem</h4>
+              <p>GTS, a quantitative trading firm and NYSE Designated Market Maker, was moving 140 people into a new office with new desk setups. Nobody had a complete list of the IT equipment the firm owned, so there was no reliable way to know what to buy.</p>
+
+              <h4 class="label">What I did</h4>
+              <p>I built a full inventory of the firm's IT assets and checked it against what each new desk needed. Then I led the setup of more than 50 workstations, directing two contractors. Through the internship I also supported IT infrastructure across equities, ETF, futures and FX trading systems.</p>
+
+              <h4 class="label">Result</h4>
+              <p>The inventory became the basis for more than $100,000 of monitors and peripherals ordered for the move.</p>
+            </div>
+
+            <aside class="sheet-side" aria-label="Sheet 05 figures and title block">
+              <dl class="figures">
+                <div><dt>Equipment ordered from the inventory</dt><dd>$100k+</dd></div>
+                <div><dt>Workstations set up</dt><dd>50+</dd></div>
+              </dl>
+              <div class="finance">
+                <h4 class="label">Read as finance</h4>
+                <p>Bottom-up budgeting, justified line by line, inside a trading firm.</p>
+              </div>
+              <dl class="title-block">
+                <div><dt class="label">Title</dt><dd>Office relocation inventory</dd></div>
+                <div><dt class="label">Firm</dt><dd>GTS Securities</dd></div>
+                <div><dt class="label">Period</dt><dd>Jun–Oct 2025</dd></div>
+                <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>Complete</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>05 of 08</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </article>
+
+        <p class="label details-label">Detail sheets 06–08</p>
+        <div class="details">
+          <article class="detail" id="s06" aria-labelledby="s06-title">
+            <header class="detail-head">
+              <p class="label no">Sheet 06</p>
+              <p class="label">GE Vernova · Automation</p>
+            </header>
+            <h3 id="s06-title">Inspection reports that build themselves</h3>
+            <p>CMM inspection results used to go into a PowerPoint built by hand, slide after slide. I replaced it with a tool that generates the report automatically, in the same format every time. It saves 5 to 10 hours of labor a week, roughly 250 to 500 hours a year, and the reports come out faster and more consistent.</p>
+            <dl class="strip">
+              <div><dt class="label">Sheet</dt><dd>06</dd></div>
+              <div><dt class="label">Result</dt><dd>Saves 5–10 hrs/week</dd></div>
+              <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
+            </dl>
+          </article>
+
+          <article class="detail" id="s07" aria-labelledby="s07-title">
+            <header class="detail-head">
+              <p class="label no">Sheet 07</p>
+              <p class="label">Columbia FSAE · CFD · FEA</p>
+            </header>
+            <h3 id="s07-title">Aero parts for an electric race car</h3>
+            <p>I design and validate aerodynamic components for Columbia's electric Formula SAE car, with Ansys CFD for the airflow and SolidWorks FEA for the structure. The team has more than 100 engineers, and each part is optimized for performance and for how we can actually make it.</p>
+            <dl class="strip">
+              <div><dt class="label">Sheet</dt><dd>07</dd></div>
+              <div><dt class="label">Tools</dt><dd>SolidWorks, Ansys</dd></div>
+              <div><dt class="label">Status</dt><dd><span class="mark mark--half" aria-hidden="true"></span>Ongoing</dd></div>
+            </dl>
+          </article>
+
+          <article class="detail" id="s08" aria-labelledby="s08-title">
+            <header class="detail-head">
+              <p class="label no">Sheet 08</p>
+              <p class="label">Personal · Embedded</p>
+            </header>
+            <h3 id="s08-title">Home security camera</h3>
+            <p>A homemade alternative to a Ring camera, built on an ESP32 camera board. It detects motion, sends an alert to Discord, and streams to my phone over a VPN when I'm away from home.</p>
+            <dl class="strip">
+              <div><dt class="label">Sheet</dt><dd>08</dd></div>
+              <div><dt class="label">Tools</dt><dd>ESP32, Discord, VPN</dd></div>
+              <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="about-title">About</h2>
+          <p class="label">General notes</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I rowed Division I varsity lightweight at Columbia. Before that I was on the Brunswick School crew that won the school's first NEIRA championship. From 2023 to 2024 I was head assistant coach at VSculls in Old Greenwich, running practice for groups of more than 30 rowers, writing practice plans and handling regatta logistics and client communication.</p>
+            <p>At Brunswick I founded the rocketry club. We designed, built and tested our own rockets, including a flight computer we built from scratch. At GE I'm now learning Mastercam for machining diaphragm wheels.</p>
+            <p>Outside work I invest, follow Formula 1, play chess and play guitar.</p>
+          </div>
+          <dl class="notes">
+            <div>
+              <dt class="label">Quant coursework</dt>
+              <dd>Intro to Applied Mathematics (ODEs and linear algebra), Multivariable Calculus for Engineers, Foundations of Data Science, Data Structures in Java</dd>
+            </div>
+            <div>
+              <dt class="label">Engineering coursework</dt>
+              <dd>Intro to Aerodynamics, Heat Transfer, Dynamics &amp; Vibrations, Intro to Mechanics of Fluids, Intro to Machining</dd>
+            </div>
+            <div>
+              <dt class="label">Economics</dt>
+              <dd>Principles of Economics</dd>
+            </div>
+            <div>
+              <dt class="label">Software</dt>
+              <dd>Python (NumPy, Pandas), Excel, SQL, Linux and bash, JavaScript, Node.js, Cloudflare Workers, LaTeX, SolidWorks, Fusion 360, Ansys, Mastercam</dd>
+            </div>
+            <div>
+              <dt class="label">Methods</dt>
+              <dd>Numerical simulation, optimization, data visualization, machine learning</dd>
+            </div>
+            <div>
+              <dt class="label">High school</dt>
+              <dd>Brunswick School, Greenwich, 2023 · <span class="nowrap">GPA 4.0</span> · <span class="nowrap">SAT 1520</span></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="contact-title">Contact</h2>
+          <p class="label">Email is fastest</p>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <p class="label">Email</p>
+            <a class="email" href="mailto:scs2269@columbia.edu">scs2269@columbia.edu</a>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/samuelsubramaniam/" rel="me">LinkedIn</a>
+            <a class="btn" href="/Samuel_Subramaniam_Resume.pdf" download="Samuel_Subramaniam_Resume.pdf">
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M6 1v7M3 5l3 3 3-3M1.5 11h9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              <span>Download résumé (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="label">Samuel C. Subramaniam · New York</p>
+    </div>
+  </footer>
+</body>
+</html>
