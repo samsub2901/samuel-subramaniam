@@ -1,0 +1,12 @@
+{
+  "name": "samuel-subramaniam",
+  "private": true,
+  "description": "Portfolio site for Samuel C. Subramaniam. Static files in public/, hosted as a Cloudflare static-assets Worker.",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.153.0"
+  }
+}
