@@ -164,7 +164,7 @@
 
               <h4 class="label">What I built</h4>
               <p>Aurora is a private portfolio terminal for my Vanguard and Robinhood accounts, plus bank and card spending. It installs on my iPhone as a web app, signs me in with Face ID and sends push alerts. Beyond holdings, it has news, markets and spending screens, and a page for every ticker with candlestick charts and fundamentals. An AI assistant answers questions about the screen I'm on and writes a morning brief and a weekly review. Before any of that text is shown, a number guard checks every figure in it against the source data.</p>
-              <p>It runs on Cloudflare Workers with a D1 (SQLite) database, a five-minute scheduler and plain JavaScript, with no framework. Holdings come in read-only through Plaid. Prices, filings and macro data come from Finnhub, Tiingo, Alpha Vantage, FMP, FRED and the SEC, and a call budget keeps each source inside its free limit. Private data is encrypted at rest, and nothing in the app can move money. An optional helper on my laptop runs a local model for background reading and makes nightly encrypted backups. I built it with Claude Code; the repository is named Finance Watch.</p>
+              <p>It runs on Cloudflare Workers with a D1 (SQLite) database, a five-minute scheduler and plain JavaScript, with no framework. Holdings come in read-only through Plaid. Prices, filings and macro data come from Finnhub, Tiingo, Alpha Vantage, FMP, FRED and the SEC, and a call budget keeps each source inside its free limit. Private data is encrypted at rest, and nothing in the app can move money. An optional helper on my laptop runs a local model for background reading and makes nightly encrypted backups. I built it with Claude Code, and the source is public as a template anyone can deploy for their own accounts.</p>
 
               <h4 class="label">Result</h4>
               <p>In daily use on my phone, with 123 automated tests. I also ran a security review of my own app, fixed each finding in its own commit with a test that failed before the fix, and added automated checks that run before every commit.</p>
@@ -185,6 +185,8 @@
                 <div><dt class="label">Stack</dt><dd>Cloudflare Workers, D1, JavaScript</dd></div>
                 <div><dt class="label">Data</dt><dd>Plaid, Finnhub, Tiingo, FRED, SEC</dd></div>
                 <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
+                <div><dt class="label">Code</dt><dd><a href="https://github.com/samsub2901/aurora">github.com/samsub2901/aurora</a></dd></div>
+                <div><dt class="label">Demo</dt><dd><a href="https://aurora-demo.aurora-watch.workers.dev">Try the example</a></dd></div>
                 <div class="sheet-row"><dt class="label">Sheet</dt><dd>01 of 08</dd></div>
               </dl>
             </aside>
@@ -207,7 +209,7 @@
               <img src="/assets/aurora-explore.jpg" width="585" height="1266" loading="lazy" decoding="async" alt="Aurora's explore screen: a note that international stocks are 19% of the portfolio, with graded international funds and companies worth researching.">
               <figcaption class="label">Fig. 01-D · Explore</figcaption>
             </figure>
-            <p class="plates-note">From the example build: a fictional portfolio over a real, frozen market-data snapshot.</p>
+            <p class="plates-note">From the example build: a fictional portfolio over a real, frozen market-data snapshot. <a href="https://aurora-demo.aurora-watch.workers.dev">Try it yourself</a>, or <a href="https://github.com/samsub2901/aurora">read the source</a>.</p>
           </div>
         </article>
 
