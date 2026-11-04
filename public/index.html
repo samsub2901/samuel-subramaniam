@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Samuel Subramaniam · Engineering and finance</title>
-  <meta name="description" content="Mechanical engineering at Columbia, co-op at GE Vernova. Eight projects: a portfolio terminal I built for my own accounts, shop-floor automation, metrology and operations work.">
+  <meta name="description" content="Mechanical engineering at Columbia, co-op at GE Vernova. Seven projects: a portfolio terminal I built for my own accounts, shop-floor automation, metrology and operations work.">
   <link rel="canonical" href="https://samuel-subramaniam.aurora-watch.workers.dev/">
   <meta name="theme-color" content="#edf1ea" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#121714" media="(prefers-color-scheme: dark)">
@@ -13,7 +13,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Samuel Subramaniam · Engineering and finance">
-  <meta property="og:description" content="Mechanical engineering at Columbia, co-op at GE Vernova. Eight projects, from a CNC print gateway to a portfolio terminal I built for my own accounts.">
+  <meta property="og:description" content="Mechanical engineering at Columbia, co-op at GE Vernova. Seven projects, from a CNC print gateway to a portfolio terminal I built for my own accounts.">
   <meta property="og:url" content="https://samuel-subramaniam.aurora-watch.workers.dev/">
   <meta property="og:image" content="https://samuel-subramaniam.aurora-watch.workers.dev/assets/og.png">
   <meta property="og:image:width" content="1200">
@@ -24,6 +24,7 @@
   <link rel="preload" href="/assets/fonts/barlow-sc-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -88,12 +89,12 @@
       <div class="wrap">
         <div class="section-head">
           <h2 id="work-title">Schedule of work</h2>
-          <p class="label">Index · 8 sheets</p>
+          <p class="label">Index · 7 sheets</p>
         </div>
 
         <div class="table-wrap" role="region" aria-labelledby="work-title" tabindex="0">
           <table class="schedule">
-            <caption class="visually-hidden">Eight projects, with sheet number, where the work was done and the result</caption>
+            <caption class="visually-hidden">Seven projects, with sheet number, where the work was done and the result</caption>
             <thead>
               <tr>
                 <th scope="col" class="label">Sheet</th>
@@ -117,9 +118,9 @@
               </tr>
               <tr>
                 <td>03</td>
-                <td><a href="#s03">Correcting CMM probe offsets</a></td>
+                <td><a href="#s03">Inspection reports that build themselves</a></td>
                 <td>GE Vernova</td>
-                <td>Least-squares fit checked against beam theory</td>
+                <td>Saves 5–10 hours of labor a week</td>
               </tr>
               <tr>
                 <td>04</td>
@@ -135,21 +136,15 @@
               </tr>
               <tr>
                 <td>06</td>
-                <td><a href="#s06">Inspection reports that build themselves</a></td>
-                <td>GE Vernova</td>
-                <td>Saves 5–10 hours of labor a week</td>
+                <td><a href="#s06">Home security camera</a></td>
+                <td>Personal</td>
+                <td>Motion alerts and remote view, in use</td>
               </tr>
               <tr>
                 <td>07</td>
-                <td><a href="#s07">Aero parts for an electric race car</a></td>
+                <td><a href="#s07">Formula SAE aerodynamics team</a></td>
                 <td>Columbia FSAE</td>
-                <td>Designed and validated with CFD and FEA</td>
-              </tr>
-              <tr>
-                <td>08</td>
-                <td><a href="#s08">Home security camera</a></td>
-                <td>Personal</td>
-                <td>Motion alerts and remote view, in use</td>
+                <td>Supporting CFD and FEA work, ongoing</td>
               </tr>
             </tbody>
           </table>
@@ -192,7 +187,7 @@
                 <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
                 <div><dt class="label">Code</dt><dd><a href="https://github.com/samsub2901/aurora">github.com/samsub2901/aurora</a></dd></div>
                 <div><dt class="label">Demo</dt><dd><a href="https://aurora-demo.aurora-watch.workers.dev">Try the example</a></dd></div>
-                <div class="sheet-row"><dt class="label">Sheet</dt><dd>01 of 08</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>01 of 07</dd></div>
               </dl>
             </aside>
           </div>
@@ -249,7 +244,7 @@
                 <div><dt class="label">Serial</dt><dd>RS-232, 7E2</dd></div>
                 <div><dt class="label">Software</dt><dd>Linux, Python, VB6</dd></div>
                 <div><dt class="label">Status</dt><dd><span class="mark mark--half" aria-hidden="true"></span>Helper in progress</dd></div>
-                <div class="sheet-row"><dt class="label">Sheet</dt><dd>02 of 08</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>02 of 07</dd></div>
               </dl>
             </aside>
           </div>
@@ -302,37 +297,46 @@
         <article class="sheet" id="s03" aria-labelledby="s03-title">
           <header class="sheet-head">
             <p class="label no">Sheet 03</p>
-            <p class="label">GE Vernova · Metrology · Numerical methods</p>
+            <p class="label">GE Vernova · Metrology · Automation</p>
           </header>
-          <h3 id="s03-title">Correcting CMM probe offsets</h3>
+          <h3 id="s03-title">Inspection reports that build themselves</h3>
           <div class="sheet-body">
             <div class="sheet-text">
               <h4 class="label">Problem</h4>
-              <p>A coordinate measuring machine records each touch as a point and a surface direction: XYZ plus the IJK normal. If the probe's offsets are slightly wrong, every measurement inherits the error.</p>
+              <p>Results from the plant's coordinate measuring machine (CMM) were turned into a PowerPoint by hand, rebuilding the same slides for every inspection. It took hours each week, and the format drifted from one report to the next.</p>
 
-              <h4 class="label">What I did</h4>
-              <p>Working with the plant's metrology lead, I estimated offset corrections from XYZIJK data with a least-squares fit. Then I checked the results against what beam theory predicts for the probe.</p>
+              <h4 class="label">What I built</h4>
+              <p>A tool that generates the inspection report automatically from the CMM's results, in the same format every time.</p>
+              <p>The CMM runs PC-DMIS, measurement software I had never used before. With no formal training available, I learned it on the job through hands-on experimentation: working through the software directly and checking each step against real inspection output until the reports came out right.</p>
 
               <h4 class="label">Result</h4>
-              <p>A validated method: the fitted corrections agreed with the beam-theory prediction, an independent physical model.</p>
+              <p>Saves 5 to 10 hours of labor a week, roughly 250 to 500 hours a year, and every report now comes out the same way.</p>
             </div>
 
-            <aside class="sheet-side" aria-label="Sheet 03 notes and title block">
-              <figure class="ref-side">
-                <img src="/assets/ref-cmm-probe.jpg" width="880" height="660" loading="lazy" decoding="async" alt="A CMM probe head with a long touch stylus hanging below it.">
-                <figcaption><span class="label">Ref. 03-A · A CMM probe head and stylus</span><span class="credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:PH10MO.jpg">Blue tooth7</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span></figcaption>
-              </figure>
+            <aside class="sheet-side" aria-label="Sheet 03 figures and title block">
+              <dl class="figures">
+                <div><dt>Hours of labor saved each week</dt><dd>5–10</dd></div>
+                <div><dt>Hours saved a year</dt><dd>250–500</dd></div>
+              </dl>
               <div class="finance">
                 <h4 class="label">Read as finance</h4>
-                <p>Least squares is the method behind linear regression; here the fit had to agree with an independent physical model before anyone trusted it.</p>
+                <p>Operating leverage: a one-time build that removes a recurring weekly cost.</p>
               </div>
               <dl class="title-block">
-                <div><dt class="label">Title</dt><dd>Probe offset correction</dd></div>
-                <div><dt class="label">Method</dt><dd>Least squares</dd></div>
-                <div><dt class="label">Check</dt><dd>Beam theory</dd></div>
-                <div class="sheet-row"><dt class="label">Sheet</dt><dd>03 of 08</dd></div>
+                <div><dt class="label">Title</dt><dd>Automated CMM inspection reports</dd></div>
+                <div><dt class="label">Software</dt><dd>PC-DMIS (self-taught)</dd></div>
+                <div><dt class="label">Machine</dt><dd>Coordinate measuring machine</dd></div>
+                <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>03 of 07</dd></div>
               </dl>
             </aside>
+          </div>
+
+          <div class="refs refs--one">
+            <figure>
+              <img src="/assets/ref-cmm.jpg" width="800" height="600" loading="lazy" decoding="async" alt="A bridge-type coordinate measuring machine on a granite table in a metrology lab.">
+              <figcaption><span class="label">Ref. 03-A · A bridge CMM, the kind of machine the reports come from</span><span class="credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:5_Axis_Scanning_Coordinate_Measurement_Machine_(CMM).png">AB Technology</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></figcaption>
+            </figure>
           </div>
         </article>
 
@@ -367,7 +371,7 @@
                 <div><dt class="label">Title</dt><dd>MFA rollout</dd></div>
                 <div><dt class="label">Tools</dt><dd>Python, Excel</dd></div>
                 <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>Complete</dd></div>
-                <div class="sheet-row"><dt class="label">Sheet</dt><dd>04 of 08</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>04 of 07</dd></div>
               </dl>
             </aside>
           </div>
@@ -406,68 +410,87 @@
                 <div><dt class="label">Firm</dt><dd>GTS Securities</dd></div>
                 <div><dt class="label">Period</dt><dd>Jun–Oct 2025</dd></div>
                 <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>Complete</dd></div>
-                <div class="sheet-row"><dt class="label">Sheet</dt><dd>05 of 08</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>05 of 07</dd></div>
               </dl>
             </aside>
           </div>
         </article>
 
-        <p class="label details-label">Detail sheets 06–08</p>
-        <div class="details">
-          <article class="detail" id="s06" aria-labelledby="s06-title">
-            <header class="detail-head">
-              <p class="label no">Sheet 06</p>
-              <p class="label">GE Vernova · Automation</p>
-            </header>
-            <h3 id="s06-title">Inspection reports that build themselves</h3>
-            <div class="detail-body">
-              <p>CMM inspection results used to go into a PowerPoint built by hand, slide after slide. I replaced it with a tool that generates the report automatically, in the same format every time. It saves 5 to 10 hours of labor a week, roughly 250 to 500 hours a year, and the reports come out faster and more consistent.</p>
-              <figure>
-                <img src="/assets/ref-cmm.jpg" width="800" height="600" loading="lazy" decoding="async" alt="A bridge-type coordinate measuring machine on a granite table in a metrology lab.">
-                <figcaption><span class="label">Ref. 06-A · A bridge CMM</span><span class="credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:5_Axis_Scanning_Coordinate_Measurement_Machine_(CMM).png">AB Technology</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></figcaption>
-              </figure>
-            </div>
-            <dl class="strip">
-              <div><dt class="label">Sheet</dt><dd>06</dd></div>
-              <div><dt class="label">Result</dt><dd>Saves 5–10 hrs/week</dd></div>
-              <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
-            </dl>
-          </article>
+        <!-- Sheet 06 -->
+        <article class="sheet" id="s06" aria-labelledby="s06-title">
+          <header class="sheet-head">
+            <p class="label no">Sheet 06</p>
+            <p class="label">Personal · Embedded</p>
+          </header>
+          <h3 id="s06-title">Home security camera</h3>
+          <div class="sheet-body">
+            <div class="sheet-text">
+              <h4 class="label">Problem</h4>
+              <p>Store-bought cameras like Ring cost money up front and usually need a subscription to do anything useful.</p>
 
-          <article class="detail" id="s07" aria-labelledby="s07-title">
-            <header class="detail-head">
-              <p class="label no">Sheet 07</p>
-              <p class="label">Columbia FSAE · CFD · FEA</p>
-            </header>
-            <h3 id="s07-title">Aero parts for an electric race car</h3>
-            <p>I design and validate aerodynamic components for Columbia's electric Formula SAE car, with Ansys CFD for the airflow and SolidWorks FEA for the structure. The team has more than 100 engineers, and each part is optimized for performance and for how we can actually make it.</p>
-            <dl class="strip">
-              <div><dt class="label">Sheet</dt><dd>07</dd></div>
-              <div><dt class="label">Tools</dt><dd>SolidWorks, Ansys</dd></div>
-              <div><dt class="label">Status</dt><dd><span class="mark mark--half" aria-hidden="true"></span>Ongoing</dd></div>
-            </dl>
-          </article>
+              <h4 class="label">What I built</h4>
+              <p>A homemade alternative on an ESP32 camera board. It detects motion, sends an alert to Discord, and streams to my phone over a VPN when I'm away from home.</p>
 
-          <article class="detail" id="s08" aria-labelledby="s08-title">
-            <header class="detail-head">
-              <p class="label no">Sheet 08</p>
-              <p class="label">Personal · Embedded</p>
-            </header>
-            <h3 id="s08-title">Home security camera</h3>
-            <div class="detail-body">
-              <p>A homemade alternative to a Ring camera, built on an ESP32 camera board. It detects motion, sends an alert to Discord, and streams to my phone over a VPN when I'm away from home.</p>
-              <figure>
-                <img class="fit-contain" src="/assets/ref-esp32-cam.jpg" width="880" height="660" loading="lazy" decoding="async" alt="An ESP32-CAM board: a small black circuit board with a camera module and a microSD slot.">
-                <figcaption><span class="label">Ref. 08-A · ESP32-CAM</span><span class="credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:ESP32-CAM.jpg">Nowforever</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></figcaption>
-              </figure>
+              <h4 class="label">Result</h4>
+              <p>In use at home: motion alerts reach my phone, and I can check the live view from anywhere, with no camera subscription.</p>
             </div>
-            <dl class="strip">
-              <div><dt class="label">Sheet</dt><dd>08</dd></div>
-              <div><dt class="label">Tools</dt><dd>ESP32, Discord, VPN</dd></div>
-              <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
-            </dl>
-          </article>
-        </div>
+
+            <aside class="sheet-side" aria-label="Sheet 06 notes and title block">
+              <div class="finance">
+                <h4 class="label">Read as finance</h4>
+                <p>Build versus buy at home: a few dollars of parts in place of a recurring subscription.</p>
+              </div>
+              <dl class="title-block">
+                <div><dt class="label">Title</dt><dd>ESP32 security camera</dd></div>
+                <div><dt class="label">Tools</dt><dd>ESP32, Discord, VPN</dd></div>
+                <div><dt class="label">Status</dt><dd><span class="mark mark--full" aria-hidden="true"></span>In use</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>06 of 07</dd></div>
+              </dl>
+            </aside>
+          </div>
+
+          <div class="refs refs--one">
+            <figure>
+              <img class="fit-contain" src="/assets/ref-esp32-cam.jpg" width="880" height="660" loading="lazy" decoding="async" alt="An ESP32-CAM board: a small black circuit board with a camera module and a microSD slot.">
+              <figcaption><span class="label">Ref. 06-A · ESP32-CAM board</span><span class="credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:ESP32-CAM.jpg">Nowforever</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Sheet 07 -->
+        <article class="sheet" id="s07" aria-labelledby="s07-title">
+          <header class="sheet-head">
+            <p class="label no">Sheet 07</p>
+            <p class="label">Columbia FSAE · Aerodynamics</p>
+          </header>
+          <h3 id="s07-title">Formula SAE aerodynamics team</h3>
+          <div class="sheet-body">
+            <div class="sheet-text">
+              <h4 class="label">Problem</h4>
+              <p>Columbia's Formula SAE team designs and builds an electric race car each year, with more than 100 engineers across its subteams.</p>
+
+              <h4 class="label">What I did</h4>
+              <p>I'm a member of the aerodynamics subteam, supporting the design and validation of aero parts with Ansys (CFD) and SolidWorks (FEA). Mostly I'm learning how a large team takes a part from simulation to something it can build.</p>
+
+              <h4 class="label">Result</h4>
+              <p>Ongoing: hands-on time with the simulation tools and the review process behind every part on the car.</p>
+            </div>
+
+            <aside class="sheet-side" aria-label="Sheet 07 notes and title block">
+              <div class="finance">
+                <h4 class="label">Read as finance</h4>
+                <p>Every part on the car competes for the same fixed budget, weight and build time.</p>
+              </div>
+              <dl class="title-block">
+                <div><dt class="label">Title</dt><dd>FSAE aerodynamics</dd></div>
+                <div><dt class="label">Tools</dt><dd>Ansys, SolidWorks</dd></div>
+                <div><dt class="label">Status</dt><dd><span class="mark mark--half" aria-hidden="true"></span>Ongoing</dd></div>
+                <div class="sheet-row"><dt class="label">Sheet</dt><dd>07 of 07</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </article>
+
         <p class="refs-note">Reference photos (marked “Ref.”) show the same kind of equipment, not the machines I worked on. They come from Wikimedia Commons, cropped and resized, with the author and license in each caption.</p>
       </div>
     </section>
@@ -480,8 +503,8 @@
         </div>
         <div class="about-grid">
           <div class="about-text">
-            <p>I'm a Gas Power &amp; Supply Chain co-op at GE Vernova's plant in Bangor, Maine. The work is broad: I automate reporting and data collection on the shop floor, support metrology on the coordinate measuring machines, ran the plant's MFA device rollout, and I'm learning Mastercam for machining diaphragm wheels. Before this I was an IT intern at GTS Securities, a quantitative trading firm and NYSE Designated Market Maker, supporting the infrastructure behind its equities, ETF, futures and FX trading.</p>
-            <p>At Columbia I study mechanical engineering with a minor in aerospace, graduating in May 2028. My coursework splits between engineering (aerodynamics, fluid mechanics, heat transfer, dynamics and vibrations, machining) and the math and data work that finance runs on (ODEs and linear algebra, multivariable calculus, data science, data structures, economics). Outside class I design aerodynamic parts for Columbia's electric Formula SAE car.</p>
+            <p>I'm a Gas Power &amp; Supply Chain co-op at GE Vernova's plant in Bangor, Maine. The work is broad: I automate reporting and data collection on the shop floor, automate inspection reporting on the coordinate measuring machine (teaching myself PC-DMIS along the way), ran the plant's MFA device rollout, and I'm learning Mastercam for machining diaphragm wheels. Before this I was an IT intern at GTS Securities, a quantitative trading firm and NYSE Designated Market Maker, supporting the infrastructure behind its equities, ETF, futures and FX trading.</p>
+            <p>At Columbia I study mechanical engineering with a minor in aerospace, graduating in May 2028. My coursework splits between engineering (aerodynamics, fluid mechanics, heat transfer, dynamics and vibrations, machining) and the math and data work that finance runs on (ODEs and linear algebra, multivariable calculus, data science, data structures, economics). Outside class I'm on the aerodynamics subteam of Columbia's Formula SAE team.</p>
             <p>Before college I founded Brunswick School's rocketry club, where we built our own flight computer. I've also rowed Division I varsity lightweight at Columbia and coached at VSculls in Old Greenwich. Outside work I invest, follow Formula 1, play chess and play guitar.</p>
           </div>
           <dl class="notes">
